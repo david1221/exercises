@@ -101,8 +101,8 @@ namespace ConsoleApp1
             while (true)
             {
                 
-                //meSpan
-                // long a = ;
+                
+               
                
 
                 Console.WriteLine("Write first number");
@@ -170,7 +170,7 @@ namespace ConsoleApp1
                 }
                 for (int i = 0; i < number2; i++)
                 {
-                    Console.WriteLine("Tivy {0}    {1}-rd andam 10i bazmapatik ", numArrayFin10[i], i + 1);
+                    Console.WriteLine("Tivy {0}    {1}-rd andam 10-i bazmapatik ", numArrayFin10[i], i + 1);
                 }
                 DateTime dateTime2 = DateTime.Now;
                 
