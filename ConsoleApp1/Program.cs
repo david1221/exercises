@@ -98,90 +98,90 @@ namespace ConsoleApp1
         static void Main(string[] args)
         {
             #region // 1) 10-i bazmapatik 
-            while (true)
-            {
-                
-                
-               
-               
+            //while (true)
+            //{
 
-                Console.WriteLine("Write first number");
-                int num1 = int.Parse(Console.ReadLine()) + 1;
-                Console.WriteLine("Write second number");
-                int num2 = int.Parse(Console.ReadLine()) + 1;
 
-                int num3 = num1 * num2;
-                int[] numArrayAll = new int[num3];
-                int[] numArraySort = new int[num3];
-                int[] numArrayFin10 = new int[num3];
-                int[,] numArrayMulti = new int[num2, num1];
-                //for TimeSpan
-                DateTime dateTime1 = DateTime.Now;
 
-                for (int i = 0; i < num2; i++)
-                {
-                    for (int m = 0; m < num1; m++)
-                    {
-                        numArrayMulti[i, m] = i * m;
-                    }
-                }
-                int index = 0;
-                for (int i = 0; i < num2; i++)
-                {
-                    for (int j = 0; j < num1; j++)      //multiplication table
-                    {
-                        numArrayAll[index] = numArrayMulti[i, j];
-                        Console.WriteLine($"Tiv {i} * {j}  ardyunqum  {index} -erd andamy =  {numArrayMulti[i, j]}");
-                        index++;
-                    }
-                }
-                int num4 = 0;
-                for (int k = 0; k < num3; k++)          //10-i bazmapatik tvery
-                {
-                    if ((((numArrayAll[k] % 10) == 0) && numArrayAll[k] != 0))
-                    {
-                        numArraySort[num4] = numArrayAll[k];
-                        num4++;
-                    }
 
-                }
-                int number1 = 0;
-                for (int i = 0; i < num4; i++)  // veradasavorum
-                {
-                    for (int j = 0; j < num4; j++)
-                    {
-                        if (numArraySort[j] > numArraySort[j + 1])
-                        {
-                            number1 = numArraySort[j];
-                            numArraySort[j] = numArraySort[j + 1];
-                            numArraySort[j + 1] = number1;
-                        }
-                    }
-                }
-                // Array.Sort(numArraySort);    //veradsavorum
-                int number2 = 0;
-                for (int i = 1; i < num3-1; i++)      //chkrknvox bazmapatikner
-                {
-                    if (numArraySort[i + 1] != numArraySort[i] && numArraySort[i] != 0)
-                    {
-                        numArrayFin10[number2] = numArraySort[i];
-                        number2++;
-                    }
-                }
-                for (int i = 0; i < number2; i++)
-                {
-                    Console.WriteLine("Tivy {0}    {1}-rd andam 10-i bazmapatik ", numArrayFin10[i], i + 1);
-                }
-                DateTime dateTime2 = DateTime.Now;
-                
-                //for TimeSpan
-                TimeSpan dateTime = dateTime2 - dateTime1;
-                long b = dateTime.Milliseconds;
-                Console.ForegroundColor = ConsoleColor.Red;
-                Console.WriteLine("\nThe process spends "+b+" milliseconds"); ;
-                Console.ForegroundColor = ConsoleColor.Gray;
-                Console.ReadKey();
-            }
+
+            //    Console.WriteLine("Write first number");
+            //    int num1 = int.Parse(Console.ReadLine()) + 1;
+            //    Console.WriteLine("Write second number");
+            //    int num2 = int.Parse(Console.ReadLine()) + 1;
+
+            //    int num3 = num1 * num2;
+            //    int[] numArrayAll = new int[num3];
+            //    int[] numArraySort = new int[num3];
+            //    int[] numArrayFin10 = new int[num3];
+            //    int[,] numArrayMulti = new int[num2, num1];
+            //    //for TimeSpan
+            //    DateTime dateTime1 = DateTime.Now;
+
+            //    for (int i = 0; i < num2; i++)
+            //    {
+            //        for (int m = 0; m < num1; m++)
+            //        {
+            //            numArrayMulti[i, m] = i * m;
+            //        }
+            //    }
+            //    int index = 0;
+            //    for (int i = 0; i < num2; i++)
+            //    {
+            //        for (int j = 0; j < num1; j++)      //multiplication table
+            //        {
+            //            numArrayAll[index] = numArrayMulti[i, j];
+            //            Console.WriteLine($"Tiv {i} * {j}  ardyunqum  {index} -erd andamy =  {numArrayMulti[i, j]}");
+            //            index++;
+            //        }
+            //    }
+            //    int num4 = 0;
+            //    for (int k = 0; k < num3; k++)          //10-i bazmapatik tvery
+            //    {
+            //        if ((((numArrayAll[k] % 10) == 0) && numArrayAll[k] != 0))
+            //        {
+            //            numArraySort[num4] = numArrayAll[k];
+            //            num4++;
+            //        }
+
+            //    }
+            //    int number1 = 0;
+            //    for (int i = 0; i < num4; i++)  // veradasavorum
+            //    {
+            //        for (int j = 0; j < num4; j++)
+            //        {
+            //            if (numArraySort[j] > numArraySort[j + 1])
+            //            {
+            //                number1 = numArraySort[j];
+            //                numArraySort[j] = numArraySort[j + 1];
+            //                numArraySort[j + 1] = number1;
+            //            }
+            //        }
+            //    }
+            //    // Array.Sort(numArraySort);    //veradsavorum 
+            //    int number2 = 0;
+            //    for (int i = 1; i < num3-1; i++)      //chkrknvox bazmapatikner
+            //    {
+            //        if (numArraySort[i + 1] != numArraySort[i] && numArraySort[i] != 0)
+            //        {
+            //            numArrayFin10[number2] = numArraySort[i];
+            //            number2++;
+            //        }
+            //    }
+            //    for (int i = 0; i < number2; i++)
+            //    {
+            //        Console.WriteLine("Tivy {0}    {1}-rd andam 10-i bazmapatik ", numArrayFin10[i], i + 1);
+            //    }
+            //    DateTime dateTime2 = DateTime.Now;
+
+            //    //for TimeSpan
+            //    TimeSpan dateTime = dateTime2 - dateTime1;
+            //    long b = dateTime.Milliseconds;
+            //    Console.ForegroundColor = ConsoleColor.Red;
+            //    Console.WriteLine("\nThe process spends "+b+" milliseconds"); ;
+            //    Console.ForegroundColor = ConsoleColor.Gray;
+            //    Console.ReadKey();
+            //}
             #endregion
             #region// 2) Amenamec yndhanur bajanarar
             //while (true)
@@ -232,10 +232,10 @@ namespace ConsoleApp1
             //int[] Arr = new int[50];
             //for (int i = 0; i < Arr.Length; i++)
             //{
-            //    Arr[i] =1000- random.Next()%2000;
+            //    Arr[i] = 1000 - random.Next() % 2000;
             //    Console.Write(" " + Arr[i] + " ");
             //}
-            //int max = 0;
+            //int max = Arr[0];
             //for (int j = 0; j < Arr.Length; j++)
             //{
             //    if (max < Arr[j])
@@ -245,21 +245,22 @@ namespace ConsoleApp1
             //}
 
             //Console.WriteLine();
-            //Console.WriteLine(" Max number = "+max);
+            //Console.WriteLine(" Max number = " + max);
             //Console.ReadKey();
             #endregion
             #region            // 6) Tveri veradasavorum
-            //int number = 50;
-            //int[] numbers = new int[number];
-            //Random random = new Random();
-            //Console.WriteLine("Random numbers");
-            //for (int i = 0; i < number; i++)
-            //{
-            //    numbers[i] = random.Next(-100, 100);
-            //    Console.Write(numbers[i] + " ");
-            //}
-            //Console.WriteLine();
-            //int num1 = numbers[0];
+            int number = 10000;
+            int[] numbers = new int[number];
+            Random random = new Random();
+            Console.WriteLine("Random numbers");
+            for (int i = 0; i < number; i++)
+            {
+                numbers[i] = random.Next(-100, 100);
+                Console.Write(numbers[i] + " ");
+            }
+            DateTime dateTime1 = DateTime.Now;
+            Console.WriteLine();
+            int num1 = numbers[0];
             //for (int i = 0; i < number; i++)
             //{
             //    for (int j = 0; j < number - 1; j++)
@@ -273,12 +274,30 @@ namespace ConsoleApp1
             //        }
             //    }
             //}
-            //Console.WriteLine("Sorted numbers");
+            int[] Part = new int[201];
+            for (int i = 0; i < number; i++)
+            {
+                Part[numbers[i] + 100] += 1;
+            }
+
+            DateTime dateTime2 = DateTime.Now;
+            TimeSpan dateTime = dateTime2 - dateTime1;
+            long b = dateTime.Milliseconds;
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.WriteLine("\nThe process spends " + b + " milliseconds"); ;
+            Console.WriteLine("Sorted numbers");
+            //for (int i = 0; i < 201; i++)
+            //{
+            //    for (int j = 0; j < Narek[i]; j++)
+            //    {
+            //        Console.WriteLine(i - 100);
+            //    }
+            //}
             //for (int i = 0; i < numbers.Length; i++)
             //{
             //    Console.Write(" " + numbers[i]);
             //}
-            //Console.ReadKey();
+            Console.ReadKey();
             #endregion
             #region      // 7) Navaki harvacner
             //Console.WriteLine(new String('-', 20) + " Navaki harvacner " + new String('-', 20));
@@ -401,7 +420,7 @@ namespace ConsoleApp1
             //        for (int i = 0; i < 8; i++)
             //        {
             //            Console.ForegroundColor = ConsoleColor.Cyan;
-            //            Console.Write(" " +( i + 1) + "   ");
+            //            Console.Write(" " + (i + 1) + "   ");
             //            Console.ForegroundColor = ConsoleColor.Gray;
             //            for (int j = 0; j < 8; j++)
 
