@@ -100,11 +100,6 @@ namespace ConsoleApp1
             #region // 1) 10-i bazmapatik 
             //while (true)
             //{
-
-
-
-
-
             //    Console.WriteLine("Write first number");
             //    int num1 = int.Parse(Console.ReadLine()) + 1;
             //    Console.WriteLine("Write second number");
@@ -180,7 +175,6 @@ namespace ConsoleApp1
             //    Console.ForegroundColor = ConsoleColor.Red;
             //    Console.WriteLine("\nThe process spends "+b+" milliseconds"); ;
             //    Console.ForegroundColor = ConsoleColor.Gray;
-            //    Console.ReadKey();
             //}
             #endregion
             #region// 2) Amenamec yndhanur bajanarar
@@ -224,7 +218,6 @@ namespace ConsoleApp1
             //    }
             //    Console.WriteLine();
             //    Console.WriteLine(sum);
-
             //}
             #endregion
             #region// 5) Maximumi pntrum
@@ -246,21 +239,20 @@ namespace ConsoleApp1
 
             //Console.WriteLine();
             //Console.WriteLine(" Max number = " + max);
-            //Console.ReadKey();
             #endregion
             #region            // 6) Tveri veradasavorum
-            int number = 10000;
-            int[] numbers = new int[number];
-            Random random = new Random();
-            Console.WriteLine("Random numbers");
-            for (int i = 0; i < number; i++)
-            {
-                numbers[i] = random.Next(-100, 100);
-                Console.Write(numbers[i] + " ");
-            }
-            DateTime dateTime1 = DateTime.Now;
-            Console.WriteLine();
-            int num1 = numbers[0];
+            //int number = 10000;
+            //int[] numbers = new int[number];
+            //Random random = new Random();
+            //Console.WriteLine("Random numbers");
+            //for (int i = 0; i < number; i++)
+            //{
+            //    numbers[i] = random.Next(-100, 100);
+            //    Console.Write(numbers[i] + " ");
+            //}
+            //DateTime dateTime1 = DateTime.Now;
+            //Console.WriteLine();
+            //int num1 = numbers[0];
             //for (int i = 0; i < number; i++)
             //{
             //    for (int j = 0; j < number - 1; j++)
@@ -274,18 +266,18 @@ namespace ConsoleApp1
             //        }
             //    }
             //}
-            int[] Part = new int[201];
-            for (int i = 0; i < number; i++)
-            {
-                Part[numbers[i] + 100] += 1;
-            }
+            //int[] Part = new int[201];
+            //for (int i = 0; i < number; i++)
+            //{
+            //    Part[numbers[i] + 100] += 1;
+            //}
 
-            DateTime dateTime2 = DateTime.Now;
-            TimeSpan dateTime = dateTime2 - dateTime1;
-            long b = dateTime.Milliseconds;
-            Console.ForegroundColor = ConsoleColor.Red;
-            Console.WriteLine("\nThe process spends " + b + " milliseconds"); ;
-            Console.WriteLine("Sorted numbers");
+            //DateTime dateTime2 = DateTime.Now;
+            //TimeSpan dateTime = dateTime2 - dateTime1;
+            //long b = dateTime.Milliseconds;
+            //Console.ForegroundColor = ConsoleColor.Red;
+            //Console.WriteLine("\nThe process spends " + b + " milliseconds"); ;
+            //Console.WriteLine("Sorted numbers");
             //for (int i = 0; i < 201; i++)
             //{
             //    for (int j = 0; j < Narek[i]; j++)
@@ -326,9 +318,7 @@ namespace ConsoleApp1
             //            Console.Write(" " + (i + 1) + "   ");
             //            Console.ForegroundColor = ConsoleColor.Gray;
             //            for (int j = 0; j < 8; j++)
-
             //            {
-
             //                if (Field[i, j] == 1)
             //                {
             //                    if (i == x && j == y)
@@ -348,7 +338,6 @@ namespace ConsoleApp1
             //                }
             //                if (Field[i, j] != 1)
             //                {
-
             //                    {
             //                        Console.Write(Field[i, j] + " ");
             //                    }
@@ -369,7 +358,6 @@ namespace ConsoleApp1
             //        Console.ForegroundColor = ConsoleColor.Gray;
             //    }
             //}
-
             #endregion
             #region // 8) Pxi harvacner
             //Console.WriteLine(new String('-', 20) + " Pxi harvacner " + new String('-', 20));
@@ -567,10 +555,7 @@ namespace ConsoleApp1
             //}
             #endregion
 
-
-
-
-
+            Console.ReadKey();
         }
     }
 }
